@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    /* background: #222; */
+    height: 87vh;
+    background-size: cover;
+    background-image: url("images/bg1.jpg");
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: linear-gradient(1deg, #45c8a5, #504887);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    background: transparent;
+    border: 2px solid gray;
+    backdrop-filter: blur(7px);
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    color: #555;
+    padding: 10px 15px;
+    height: 32px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+.weather h1 {
+    margin-top: 10px;
+    font-size: 45px;
+    font-weight: 500;
+
+}
+
+.weather h2 {
+    font-size: 30px;
+    font-weight: 400;
+
+
+}
+
+.search button img {
+    width: 34px;
+
+}
+
+.weather img {
+    margin-top: 30px;
+    height: 80px;
+    animation: weather 3s ease-in-out infinite;
+}
+
+.detail img {
+    height: 40px;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin-top: 20px;
+}
+
+.weather {
+    opacity: 0;
+}
+
+.incorrect img {
+    height: 200px;
+    position: absolute;
+    top: 150px;
+    left: 35%;
+    animation: incorrect 2s ease-in-out infinite;
+    
+}
+
+.incorrect h2 {
+    position: absolute;
+    margin-top: -50px;
+    left: 35%;
+    color: #130232;
+}
+
+.incorrect {
+    opacity: 0;
+    
+}
+
+
+@keyframes incorrect {
+    0%{
+        transform: scale(0.6);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.6);
+    }
+}
+@keyframes weather {
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+}
+
