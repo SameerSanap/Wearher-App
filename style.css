@@ -142,4 +142,10 @@ body {
         transform: scale(0.8);
     }
 }
-
+.search button:hover{
+    background-color: #212625;
+}
+.search input:hover{
+    background-color: #eaeeed;
+    
+}
